@@ -97,10 +97,14 @@ let svg = d3.select("#network"),
     height = +svg.attr("height");
 
 let simulation = d3.forceSimulation()
-    .force("link", d3.forceLink().id(function(d) { return d.id; }).distance(180))
-    .force("charge", d3.forceManyBody().strength(-400)) //how far removed from each other, the more in minus the farther
-    .force("center", d3.forceCenter(width/2, height / 2));
-
+    .force("link", d3.forceLink().id(function(d) { return d.id; }).distance(200))
+    .force("charge", d3.forceManyBody().strength(-120)) //how far removed from each other, the more in minus the farther
+    // .force("charge", d3.forceManyBody().strength(-540).distanceMax(800).distanceMin(400)) //how far removed from each other, the more in minus the farther
+    .force("center", d3.forceCenter(width/2, height / 1.1))
+    .force("collide", d3.forceCollide().strength(0.99).radius(function(d) { return d.r + 130; }).iterations(4));
+    // .force("positioning", d3.forceY(function(d){return d.id*3}));
+    // .force("positioning", d3.forceX(1).strength(function(d){return d.id}))
+    // .force("positioning", d3.forceY(1).strength(function(d){return d.id}));
 
 d3.json("data_cleaned.json", function(error, graph) {
     if (error) throw error;
@@ -109,13 +113,13 @@ d3.json("data_cleaned.json", function(error, graph) {
     // build graph
     const links = addNodeLinks(svg, graph);
     const nodes = addNodes(svg, graph);
-    // const images = addNodeImages(svg, nodes, graph);
+    const images = addNodeImages(svg, nodes, graph);
     const labels = addNodeTitles(svg, graph);
 
 
     // add interactions and animations
-    attachMouseEventsToCircles(nodes);
-    makeGraphWobbly(graph, links, labels, nodes)
+    attachMouseEventsToCircles(images);
+    makeGraphWobbly(graph, links, labels, nodes, images)
 });
 
 
@@ -134,6 +138,7 @@ function addNodeLinks(svg, graph) {
     return links
 }
 
+
 function addNodes(svg, graph) {
     // add circles nodes to graph
     let nodes = svg.append("g")
@@ -145,23 +150,47 @@ function addNodes(svg, graph) {
             const name = d.name.toLocaleLowerCase().split(' ').join('-');
             return name;
         })
-        .attr("r", 6)
-        .call(d3.drag()
-            .on("start", dragstarted)
-            .on("drag", dragged)
-            .on("end", dragended));
+        .attr("r", 6);
+        // .call(d3.drag()
+        //     .on("start", dragstarted)
+        //     .on("drag", dragged)
+        //     .on("end", dragended));
 
     return nodes;
 }
 
 function addNodeImages(svg, nodes, graph) {
     // add an image to each node
-    // TODO: make this work
-    let images = nodes.append("images")
-        .attr("xlink:href", function(d){return d.url;});
+    let images = svg.append("g")
+        .attr("class", "imgs")
+        .selectAll("image")
+        .data(graph.nodes)
+        .enter().append("image")
+        .attr("id", function (d) {
+            const nameIm = d.name.toLocaleLowerCase().split(' ').join('-') + '-img';
+            return nameIm;
+        })
+        .attr("xlink:href",  function(d) { return d.url;})
+        // .attr("xlink:href", "https://static.pexels.com/photos/126407/pexels-photo-126407.jpeg")
+        .attr("height", 50)
+        .attr("width", 50)
+        // add moving effect
+        .on('click', function() {
+            let sel = d3.select(this);
+            sel.moveToFront();
+        })
+        .on('click', function() {
+            d3.select(nameIm).moveToBack();
+        })
+        .call(d3.drag()
+            .on("start", dragstarted)
+            .on("drag", dragged)
+            .on("end", dragended));
+
 
     return images;
 }
+
 
 function addNodeTitles(svg, graph) {
     // add title nodes to graph
@@ -179,13 +208,16 @@ function addNodeTitles(svg, graph) {
     return labels;
 }
 
-function attachMouseEventsToCircles(circles) {
-
+function attachMouseEventsToCircles(images) {
     // called when mouse enters node
     function handleMouseOver(node) {
         const name = node.name.toLocaleLowerCase().split(' ').join('-') + '-title';
         const nodeId = '#' + name;
         d3.selectAll(nodeId).style("opacity", 1);
+        //
+        const nameIm = node.name.toLocaleLowerCase().split(' ').join('-') + '-img';
+        const imgId = "#" + nameIm;
+        d3.selectAll(imgId).raise();
     }
 
     // called when stop hover over a node
@@ -193,15 +225,19 @@ function attachMouseEventsToCircles(circles) {
         const name = node.name.toLocaleLowerCase().split(' ').join('-') + '-title';
         const nodeId = '#' + name;
         d3.selectAll(nodeId).style("opacity", 0);
+
+        const nameIm = node.name.toLocaleLowerCase().split(' ').join('-') + '-img';
+        const imgId = "#" + nameIm;
+        d3.selectAll(imgId).lower();
     }
 
-    // add mouse event listeners to the circle nodes
-    circles
+    // add mouse event listeners to the images nodes
+    images
         .on("mouseout", handleMouseOut)
-        .on("mouseover", handleMouseOver);
+        .on("mouseover", handleMouseOver)
 }
 
-function makeGraphWobbly(graph, links, labels, nodes) {
+function makeGraphWobbly(graph, links, labels, nodes, images) {
     simulation
         .nodes(graph.nodes)
         .on("tick", ticked);
@@ -217,45 +253,34 @@ function makeGraphWobbly(graph, links, labels, nodes) {
             .attr("y2", function(d) { return d.target.y; });
 
         labels
-            .attr("x", function(d) { return d.x+4; })
-            .attr("y", function (d) { return d.y; })
-            .style("font-size", "14px").style("fill", "#181c59")
+            .attr("x", function(d) { return d.x -40; })
+            .attr("y", function (d) { return d.y-17; })
+            .style("font-size", "14px").style("fill", "#feffe5")
+            .style("z-index", -3)
             .style("font-family", "monospace, serif");
 
         nodes
-            .attr("r", 20)
-            .style("fill", "#d9d9d9")
-            // .style("stroke", "#969696")
+            .attr("r", 100)
+            .style("fill", "none")
+            .style("stroke", "#969696")
             .style("stroke-width", "1px")
             .attr("cx", function (d) { return d.x; })
             .attr("cy", function(d) { return d.y; });
 
 
-        // images
-        //     .attr("x", function(d) { return d.x; })
-        //     .attr("y", function (d) { return d.y; });
+        images
+            .attr("height", 80)
+            .attr("width", 80)
+            .attr("x", function(d) { return d.x-40; })
+            .attr("y", function (d) { return d.y-40; });
     }
 }
 
 
-// // movement
-// function dragstarted(d) {
-//     if (!d3.event.active) simulation.alphaTarget(1).restart();
-//     simulation.fix(d);
-// }
-//
-// function dragged(d) {
-//     simulation.fix(d, d3.event.x, d3.event.y);
-// }
-//
-// function dragended(d) {
-//     if (!d3.event.active) simulation.alphaTarget(1).restart();
-//     simulation.fix(d);
-// }
 
 
 function dragstarted(d) {
-    if (!d3.event.active) simulation.alphaTarget(0.9).restart();
+    if (!d3.event.active) simulation.alpha(0.9).restart();
     d.fx = d.x;
     d.fy = d.y;
 }
@@ -266,87 +291,7 @@ function dragged(d) {
 }
 
 function dragended(d) {
-    if (!d3.event.active) simulation.alphaTarget(0.9);
+    if (!d3.event.active) simulation.alpha(0.9);
     d.fx = null;
     d.fy = null;
 }
-
-
-
-
-//
-//
-// let canvas = d3.select('#network'),
-//     width = +canvas.attr("width"),
-//     height = +canvas.attr("height");
-//
-// let r = 3;
-//
-// let context = canvas.node().getContext('2d');
-// let simulation = d3.forceSimulation()
-//     .force('x', d3.forceX(width / 3))
-//     .force('y', d3.forceY(height/ 3))
-//     .force('charge', d3.forceManyBody(r+1)
-//         .strength(-400))
-//     .force('link', d3.forceLink()
-//         .id(function(d){return d.name;}))
-//     .on("tick", update);
-//
-// simulation.nodes(graph.nodes);
-// simulation.force('link');
-//
-// function update() {
-//     context.clearRect(0, 0, width, height);
-//
-//     context.beginPath();
-//     graph.links.forEach(drawLink); //for each node draw node
-//     context.fill();
-//
-//     context.beginPath();
-//     graph.nodes.forEach(drawNode); //for each node draw node
-//     context.stroke();
-// }
-//
-//
-// function drawNode(d) { //each drawnode picks up one datum
-//     context.moveTo(d.x, d.y);
-//     context.arc(d.x, d.y, r, 0, 2*Math.PI); //position of the dot, with 0 degrees until 2*PI
-// }
-//
-// function drawLink(l) { //each drawnode picks up one datum
-//     context.moveTo(l.source.x, l.source.y);
-//     context.lineTo(l.target.x, l.target.y, r, 0, 2*Math.PI); //position of the dot, with 0 degrees until 2*PI
-// }
-//
-//
-//
-// update();
-//
-// // let network = d3.select('svg').append('svg')
-// //     .attr('width', width)
-// //     .attr('height', height)
-// //     .style('color', 'blue');
-// //
-// //
-// //
-// //
-// // let width = window.innerWidth;
-// // let height = window.innerHeight;
-// //
-// // let nodes  = [
-// //     {x: width/3, y: height/2},
-// //     {x: 2*width/3, y: height/2}
-// // ];
-// //
-// //
-// // let links = [
-// //     {source: 0, target: 1}
-// // ];
-// //
-// //
-// // let simulation = d3.forceSimulation()
-// //     .force("charge", d3.forceManyBody().strength(-200))
-// //     .force("link", d3.forceLink().id(function(d) { return d.id; }).distance(40))
-// //     .force("x", d3.forceX(width / 2))
-// //     .force("y", d3.forceY(height / 2))
-// //     .on("tick", ticked);
