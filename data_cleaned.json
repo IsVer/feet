@@ -1,0 +1,185 @@
+{ "nodes" : [
+    {
+    "id": 1,
+    "name": "Four Tet",
+    "url": "https://i.scdn.co/image/e443dc76d6cfae577d9eedc415443d6f93d39ce4"
+    },
+    {
+      "id": 2,
+      "name" : "Burial",
+      "url": "https://i.scdn.co/image/867560cdb26864f71fdc47cde5e635bd37d81a0d"
+    },
+    {
+      "id": 3,
+      "name" : "Caribou",
+      "url": "https://i.scdn.co/image/1a6c55c8ddf75fd0b177fbc166765d6700809847"
+    },
+    {
+      "id": 4,
+      "name" : "Mount Kimbie",
+      "url": "https://i.scdn.co/image/3690585e41e216aee01c6a4b5c550674aa5706d0"
+    },
+    {
+      "id": 5,
+      "name" : "Boards of Canada",
+      "url": "https://i.scdn.co/image/cefe6c830485f48e0d14c9c779d7bd61c8852161"
+    },
+    {
+      "id": 6,
+      "name" : "Clark",
+      "url": "https://i.scdn.co/image/257a1cf35f3e6fd74d2dd561b5ef1c7919941866"
+    },
+    {
+      "id": 7,
+      "name" : "Bibio",
+      "url": "https://i.scdn.co/image/cd721aa1da023935b8dcee149d45eecea00d2b8a"
+    },
+    {
+      "id": 8,
+      "name" : "Nosaj Thing",
+      "url": "https://i.scdn.co/image/9fc6dd27c7181280f29318b0cb5bc81766ee18c3"
+    },
+    {
+      "id": 9,
+      "name" : "Gold Panda",
+      "url": "https://i.scdn.co/image/e00b153d0b05fa5d7affd9d980480873f1e099b1"
+    },
+    {
+      "id": 10,
+      "name" : "Actress",
+      "url": "https://i.scdn.co/image/1e650388bc5c166b461a5725fd6dc27636cfa145"
+    },
+    {
+      "id": 11,
+      "name" : "Floating Points",
+      "url": "https://i.scdn.co/image/7d060207bc2d9e2c067da45d4062a6bfe7d199bd"
+    },
+    { "id": 12,
+      "name" : "Lusine",
+      "url" : "https://i.scdn.co/image/3430a573b81ffe41ddcca778eb8550b5ae6ed504"
+    },
+    { "id": 13,
+      "name" : "Daphni",
+      "url" : "https://i.scdn.co/image/3430a573b81ffe41ddcca778eb8550b5ae6ed504"
+    },
+    { "id": 14,
+      "name" : "Pantha Du Prince",
+      "url" : "https://i.scdn.co/image/d2ed9ea820bb6ff5393d976219a0c5bf7f492cff"
+    },
+    { "id": 15,
+      "name" : "Plaid",
+      "url" : "https://i.scdn.co/image/7fd8fe1c823ecd5b8bf79b14868656c104855876"
+    },
+    { "id": 16,
+      "name" : "Machinedrum",
+      "url" : "https://i.scdn.co/image/4cc97de8666273de6694b26034e73707af2a5e41"
+    },
+    { "id": 17,
+      "name" : "Jon Hopkins",
+      "url" : "https://i.scdn.co/image/247ae761400dcdd5b01112c63e7f78db813d2682"
+    },
+    { "id": 18,
+      "name" : "Shigeto",
+      "url" : "https://i.scdn.co/image/151e178d691879b1e36934e76dc0b16ce39aecf9"
+    },
+    { "id": 19,
+      "name" : "Aphex Twin",
+      "url" : "https://i.scdn.co/image/e8ea98b201ac22460a4b1692694c33056bee5247"
+    },
+    { "id": 20,
+      "name" : "Rival Consoles",
+      "url" : "https://i.scdn.co/image/8e0116a9e08d86148a38fa42e314c133d27b2c1a"
+    },
+    { "id": 21,
+      "name" : "Forest Swords",
+      "url" : "https://i.scdn.co/image/154fc533b9d28957a884d7f4e411cdc3bd7cc3b9"
+    }
+  ],
+  "links" : [
+
+    {
+      "source_id": 1,
+      "target_id": 2
+    },
+    {
+      "source_id": 1,
+      "target_id": 3
+    },
+    {
+      "source_id": 1,
+      "target_id": 4
+    },
+
+    {
+      "source_id": 1,
+      "target_id": 5
+    },
+    {
+      "source_id": 1,
+      "target_id": 6
+    }
+  ,
+    {
+      "source_id": 1,
+      "target_id": 7
+    },
+    {
+      "source_id": 1,
+      "target_id": 8
+    }
+  ,
+    {
+      "source_id": 1,
+      "target_id": 9
+    }
+  ,
+    {
+      "source_id": 1,
+      "target_id": 10
+    },
+    {
+      "source_id": 1,
+      "target_id": 11
+    },
+    {
+      "source_id": 1,
+      "target_id": 12
+    },
+    {
+      "source_id": 1,
+      "target_id": 13
+    },
+    {
+      "source_id": 1,
+      "target_id": 14
+    },
+    {
+      "source_id": 1,
+      "target_id": 15
+    },
+    {
+      "source_id": 1,
+      "target_id": 16
+    },
+    {
+      "source_id": 1,
+      "target_id": 17
+    },
+    {
+      "source_id": 1,
+      "target_id": 18
+    },
+    {
+      "source_id": 1,
+      "target_id": 19
+    },
+    {
+      "source_id": 1,
+      "target_id": 20
+    },
+    {
+      "source_id": 1,
+      "target_id": 21
+    }
+  ]
+}

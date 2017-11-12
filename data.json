@@ -1,0 +1,634 @@
+[{
+  "external_urls" : {
+    "spotify" : "https://open.spotify.com/artist/7Eu1txygG6nJttLHbZdQOh"
+  },
+  "followers" : {
+    "href" : null,
+    "total" : 196945
+  },
+  "genres" : [ "alternative dance", "bass music", "big beat", "chamber psych", "chillwave", "dance-punk", "electronic", "indie r&b", "indietronica", "intelligent dance music", "microhouse", "minimal techno", "new rave", "nu jazz", "synthpop", "trip hop" ],
+  "href" : "https://api.spotify.com/v1/artists/7Eu1txygG6nJttLHbZdQOh",
+  "id" : "7Eu1txygG6nJttLHbZdQOh",
+  "images" : [ {
+    "height" : 640,
+    "url" : "https://i.scdn.co/image/e443dc76d6cfae577d9eedc415443d6f93d39ce4",
+    "width" : 640
+  }, {
+    "height" : 320,
+    "url" : "https://i.scdn.co/image/77b2a9e13a0e38581537b0a78696a50297c49e54",
+    "width" : 320
+  }, {
+    "height" : 160,
+    "url" : "https://i.scdn.co/image/75eb788d430cedcbae7ae9ecfd02c7b186054c9d",
+    "width" : 160
+  } ],
+  "name" : "Four Tet",
+  "popularity" : 68,
+  "type" : "artist",
+  "uri" : "spotify:artist:7Eu1txygG6nJttLHbZdQOh"
+}]
+[
+{
+  "artists" : [ {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/0uCCBpmg6MrPb1KY2msceF"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 145596
+    },
+    "genres" : [ "bass music", "chillwave", "dubstep", "electronic", "escape room", "fluxwork", "future garage", "hauntology", "indie r&b", "indietronica", "intelligent dance music", "microhouse", "ninja", "trip hop", "uk garage", "wonky" ],
+    "href" : "https://api.spotify.com/v1/artists/0uCCBpmg6MrPb1KY2msceF",
+    "id" : "0uCCBpmg6MrPb1KY2msceF",
+    "images" : [ {
+      "height" : 504,
+      "url" : "https://i.scdn.co/image/e8e7ac38910768ed522981fbbfcc46baba7b0c12",
+      "width" : 703
+    }, {
+      "height" : 459,
+      "url" : "https://i.scdn.co/image/70180155163bd7b14dd3f69905de214433297ef8",
+      "width" : 640
+    }, {
+      "height" : 143,
+      "url" : "https://i.scdn.co/image/867560cdb26864f71fdc47cde5e635bd37d81a0d",
+      "width" : 199
+    }, {
+      "height" : 46,
+      "url" : "https://i.scdn.co/image/e515df2f4ff4ce3abd23dd26dd34333fc1d030e7",
+      "width" : 64
+    } ],
+    "name" : "Burial",
+    "popularity" : 57,
+    "type" : "artist",
+    "uri" : "spotify:artist:0uCCBpmg6MrPb1KY2msceF"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/3NUtpWpGDoffm3RCGhSHtl"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 133292
+    },
+    "genres" : [ "alternative dance", "bass music", "chamber psych", "chillwave", "deep indie r&b", "electronic", "escape room", "future garage", "indie jazz", "indie r&b", "indietronica", "microhouse", "new rave", "trip hop" ],
+    "href" : "https://api.spotify.com/v1/artists/3NUtpWpGDoffm3RCGhSHtl",
+    "id" : "3NUtpWpGDoffm3RCGhSHtl",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/d784215c4b003f30d5622912584f4d21a1030269",
+      "width" : 640
+    }, {
+      "height" : 320,
+      "url" : "https://i.scdn.co/image/3690585e41e216aee01c6a4b5c550674aa5706d0",
+      "width" : 320
+    }, {
+      "height" : 160,
+      "url" : "https://i.scdn.co/image/51bc5cae9f0dd01f91b0066f7e81203f3afc9df5",
+      "width" : 160
+    } ],
+    "name" : "Mount Kimbie",
+    "popularity" : 65,
+    "type" : "artist",
+    "uri" : "spotify:artist:3NUtpWpGDoffm3RCGhSHtl"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/2VAvhf61GgLYmC6C8anyX1"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 196554
+    },
+    "genres" : [ "alternative dance", "ambient", "big beat", "electronic", "fourth world", "indietronica", "intelligent dance music", "microhouse", "new rave", "nu jazz", "post rock", "trip hop", "vaporwave" ],
+    "href" : "https://api.spotify.com/v1/artists/2VAvhf61GgLYmC6C8anyX1",
+    "id" : "2VAvhf61GgLYmC6C8anyX1",
+    "images" : [ {
+      "height" : 902,
+      "url" : "https://i.scdn.co/image/c533bf6f08a42119065d8c2171cdfa8e96720b4c",
+      "width" : 1000
+    }, {
+      "height" : 578,
+      "url" : "https://i.scdn.co/image/c0b33a8d211600d70dcda3077d6a582da34321b0",
+      "width" : 640
+    }, {
+      "height" : 180,
+      "url" : "https://i.scdn.co/image/cefe6c830485f48e0d14c9c779d7bd61c8852161",
+      "width" : 199
+    }, {
+      "height" : 58,
+      "url" : "https://i.scdn.co/image/d178796bb8003ec506629e0e63939599cbaba85c",
+      "width" : 64
+    } ],
+    "name" : "Boards of Canada",
+    "popularity" : 62,
+    "type" : "artist",
+    "uri" : "spotify:artist:2VAvhf61GgLYmC6C8anyX1"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/4aEnNH9PuU1HF3TsZTru54"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 280608
+    },
+    "genres" : [ "alternative dance", "chamber pop", "chamber psych", "chillwave", "dance-punk", "dream pop", "electronic", "freak folk", "indie pop", "indie r&b", "indie rock", "indietronica", "modern rock", "neo-psychedelic", "new rave", "synthpop", "trip hop" ],
+    "href" : "https://api.spotify.com/v1/artists/4aEnNH9PuU1HF3TsZTru54",
+    "id" : "4aEnNH9PuU1HF3TsZTru54",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/a25f22ee209a3be61b94be9da95bf7ec89c95d98",
+      "width" : 640
+    }, {
+      "height" : 320,
+      "url" : "https://i.scdn.co/image/1a6c55c8ddf75fd0b177fbc166765d6700809847",
+      "width" : 320
+    }, {
+      "height" : 160,
+      "url" : "https://i.scdn.co/image/73527a3bcb07cc18b1eb763bd218d25561df651c",
+      "width" : 160
+    } ],
+    "name" : "Caribou",
+    "popularity" : 62,
+    "type" : "artist",
+    "uri" : "spotify:artist:4aEnNH9PuU1HF3TsZTru54"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/6kic5bCjlohhDn9KzXbOta"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 50219
+    },
+    "genres" : [ "acid house", "alternative dance", "ambient", "bass music", "chamber psych", "chillwave", "dance-punk", "drill and bass", "electroclash", "electronic", "escape room", "float house", "fluxwork", "glitch", "indie r&b", "indietronica", "intelligent dance music", "mandible", "microhouse", "minimal techno", "new rave", "ninja", "outsider house", "trip hop", "vaporwave", "wonky" ],
+    "href" : "https://api.spotify.com/v1/artists/6kic5bCjlohhDn9KzXbOta",
+    "id" : "6kic5bCjlohhDn9KzXbOta",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/99c03835d6c8f9426857c94320b5be58e7c82087",
+      "width" : 640
+    }, {
+      "height" : 320,
+      "url" : "https://i.scdn.co/image/257a1cf35f3e6fd74d2dd561b5ef1c7919941866",
+      "width" : 320
+    }, {
+      "height" : 160,
+      "url" : "https://i.scdn.co/image/4a024f34521b51e0319bc09db8c971933f8f1234",
+      "width" : 160
+    } ],
+    "name" : "Clark",
+    "popularity" : 51,
+    "type" : "artist",
+    "uri" : "spotify:artist:6kic5bCjlohhDn9KzXbOta"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/0qzzGu8qpbXYpzgV52wOFT"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 95526
+    },
+    "genres" : [ "alternative dance", "chamber pop", "chillwave", "downtempo", "dream pop", "electronic", "freak folk", "indie folk", "indie pop", "indie r&b", "indietronica", "neo-psychedelic", "new rave", "shimmer pop" ],
+    "href" : "https://api.spotify.com/v1/artists/0qzzGu8qpbXYpzgV52wOFT",
+    "id" : "0qzzGu8qpbXYpzgV52wOFT",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/4ac301c630f1a059fa9553dfc29a9d5aa0349e95",
+      "width" : 640
+    }, {
+      "height" : 320,
+      "url" : "https://i.scdn.co/image/cd721aa1da023935b8dcee149d45eecea00d2b8a",
+      "width" : 320
+    }, {
+      "height" : 160,
+      "url" : "https://i.scdn.co/image/af36ea92d9a1d3da8569d1d9664a3882198d420d",
+      "width" : 160
+    } ],
+    "name" : "Bibio",
+    "popularity" : 64,
+    "type" : "artist",
+    "uri" : "spotify:artist:0qzzGu8qpbXYpzgV52wOFT"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/0IVapwlnM3dEOiMsHXsghT"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 107460
+    },
+    "genres" : [ "bass music", "chillhop", "chillwave", "electronic", "escape room", "glitch hop", "indie r&b", "indietronica", "microhouse", "trip hop", "vapor twitch", "wonky" ],
+    "href" : "https://api.spotify.com/v1/artists/0IVapwlnM3dEOiMsHXsghT",
+    "id" : "0IVapwlnM3dEOiMsHXsghT",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/8c686af8fb34503bb5b6ccd93dadee33be9e7c72",
+      "width" : 640
+    }, {
+      "height" : 320,
+      "url" : "https://i.scdn.co/image/9fc6dd27c7181280f29318b0cb5bc81766ee18c3",
+      "width" : 320
+    }, {
+      "height" : 160,
+      "url" : "https://i.scdn.co/image/4e7ed097fad9c5f8eaee2cb0a787de6be67b9249",
+      "width" : 160
+    } ],
+    "name" : "Nosaj Thing",
+    "popularity" : 60,
+    "type" : "artist",
+    "uri" : "spotify:artist:0IVapwlnM3dEOiMsHXsghT"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/6xS3zemJD9h94iueQvGqVk"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 134905
+    },
+    "genres" : [ "alternative dance", "bass music", "chillwave", "indie r&b", "indietronica", "microhouse", "new rave", "wonky" ],
+    "href" : "https://api.spotify.com/v1/artists/6xS3zemJD9h94iueQvGqVk",
+    "id" : "6xS3zemJD9h94iueQvGqVk",
+    "images" : [ {
+      "height" : 1000,
+      "url" : "https://i.scdn.co/image/89c7ebcde1187373449446ae4b51e5f188814f63",
+      "width" : 1000
+    }, {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/90ca42be1af96dd5d116094c093d6adbff020acc",
+      "width" : 640
+    }, {
+      "height" : 200,
+      "url" : "https://i.scdn.co/image/e00b153d0b05fa5d7affd9d980480873f1e099b1",
+      "width" : 200
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/81dccedb62a055128f8dad4f7261eebaf758db50",
+      "width" : 64
+    } ],
+    "name" : "Gold Panda",
+    "popularity" : 56,
+    "type" : "artist",
+    "uri" : "spotify:artist:6xS3zemJD9h94iueQvGqVk"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/3bg5rmICvmA8dmYVAdKGYH"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 32189
+    },
+    "genres" : [ "acid house", "ambient", "bass music", "chamber psych", "chillwave", "detroit techno", "drone", "dub techno", "electronic", "escape room", "experimental", "float house", "fluxwork", "fourth world", "freak folk", "future garage", "glitch", "hauntology", "indie r&b", "indietronica", "intelligent dance music", "mandible", "microhouse", "minimal", "minimal techno", "outsider house", "techno", "vaporwave", "wonky" ],
+    "href" : "https://api.spotify.com/v1/artists/3bg5rmICvmA8dmYVAdKGYH",
+    "id" : "3bg5rmICvmA8dmYVAdKGYH",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/3db625e2024b45737bb3c44348e5bab392912216",
+      "width" : 640
+    }, {
+      "height" : 320,
+      "url" : "https://i.scdn.co/image/1e650388bc5c166b461a5725fd6dc27636cfa145",
+      "width" : 320
+    }, {
+      "height" : 160,
+      "url" : "https://i.scdn.co/image/96c884674e5ab5baa71b61aa6e0342a87d80aef0",
+      "width" : 160
+    } ],
+    "name" : "Actress",
+    "popularity" : 45,
+    "type" : "artist",
+    "uri" : "spotify:artist:3bg5rmICvmA8dmYVAdKGYH"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/2AR42Ur9PcchQDtEdwkv4L"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 75646
+    },
+    "genres" : [ "alternative dance", "bass music", "chamber psych", "deep house", "electronic", "float house", "fluxwork", "future garage", "indie jazz", "indie r&b", "indietronica", "microhouse", "minimal techno", "new rave", "ninja", "nu jazz", "outsider house", "trip hop", "uk garage", "wonky" ],
+    "href" : "https://api.spotify.com/v1/artists/2AR42Ur9PcchQDtEdwkv4L",
+    "id" : "2AR42Ur9PcchQDtEdwkv4L",
+    "images" : [ {
+      "height" : 1333,
+      "url" : "https://i.scdn.co/image/8134fac0149b903cef22a4165d68848760e00aef",
+      "width" : 1000
+    }, {
+      "height" : 853,
+      "url" : "https://i.scdn.co/image/9213a1c0e21ce65ea4d4c230b5a708df56a9741e",
+      "width" : 640
+    }, {
+      "height" : 267,
+      "url" : "https://i.scdn.co/image/7d060207bc2d9e2c067da45d4062a6bfe7d199bd",
+      "width" : 200
+    }, {
+      "height" : 85,
+      "url" : "https://i.scdn.co/image/f271cd469012c11ef09e2cebb246bdccd5817c3c",
+      "width" : 64
+    } ],
+    "name" : "Floating Points",
+    "popularity" : 55,
+    "type" : "artist",
+    "uri" : "spotify:artist:2AR42Ur9PcchQDtEdwkv4L"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/2fMe9lZs5HGGOwh8cMSIub"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 24340
+    },
+    "genres" : [ "ambient", "ambient idm", "bass music", "chillwave", "drill and bass", "electronic", "electronica", "glitch", "indietronica", "intelligent dance music", "microhouse", "minimal techno", "ninja", "trip hop", "wonky" ],
+    "href" : "https://api.spotify.com/v1/artists/2fMe9lZs5HGGOwh8cMSIub",
+    "id" : "2fMe9lZs5HGGOwh8cMSIub",
+    "images" : [ {
+      "height" : 1000,
+      "url" : "https://i.scdn.co/image/0ef9fadba79f63a28fff3d9f382be03434492457",
+      "width" : 1000
+    }, {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/e51cbb828442938b05cbde587daa4a7dfc4ef301",
+      "width" : 640
+    }, {
+      "height" : 200,
+      "url" : "https://i.scdn.co/image/3430a573b81ffe41ddcca778eb8550b5ae6ed504",
+      "width" : 200
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/109680d46089f20c89ee7b9d30e317fedea809a4",
+      "width" : 64
+    } ],
+    "name" : "Lusine",
+    "popularity" : 50,
+    "type" : "artist",
+    "uri" : "spotify:artist:2fMe9lZs5HGGOwh8cMSIub"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/7Go2Fj2YWEQkYBqTVQArYi"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 56824
+    },
+    "genres" : [ "alternative dance", "bass music", "chamber psych", "electronic", "float house", "glitch", "indietronica", "intelligent dance music", "microhouse", "minimal techno", "new rave", "tech house" ],
+    "href" : "https://api.spotify.com/v1/artists/7Go2Fj2YWEQkYBqTVQArYi",
+    "id" : "7Go2Fj2YWEQkYBqTVQArYi",
+    "images" : [ {
+      "height" : 1024,
+      "url" : "https://i.scdn.co/image/0b5c65392b3a7d46e792fbcd674bced849d4c28f",
+      "width" : 683
+    }, {
+      "height" : 960,
+      "url" : "https://i.scdn.co/image/42cd9b44edb63a2ef20309c6dc743e119612e1ba",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/d2ed9ea820bb6ff5393d976219a0c5bf7f492cff",
+      "width" : 200
+    }, {
+      "height" : 96,
+      "url" : "https://i.scdn.co/image/dcf58f0ce333dd92b9f50de7c863fe67cffae2a1",
+      "width" : 64
+    } ],
+    "name" : "Pantha Du Prince",
+    "popularity" : 51,
+    "type" : "artist",
+    "uri" : "spotify:artist:7Go2Fj2YWEQkYBqTVQArYi"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/4nhvb6x9ZhPiYCzrHDNia9"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 24105
+    },
+    "genres" : [ "bass music", "deep house", "float house", "fluxwork", "future garage", "microhouse", "minimal techno", "outsider house" ],
+    "href" : "https://api.spotify.com/v1/artists/4nhvb6x9ZhPiYCzrHDNia9",
+    "id" : "4nhvb6x9ZhPiYCzrHDNia9",
+    "images" : [ {
+      "height" : 750,
+      "url" : "https://i.scdn.co/image/2ceae7fcb1293c9edab4f6bffbd8e8eea9e51a01",
+      "width" : 1000
+    }, {
+      "height" : 480,
+      "url" : "https://i.scdn.co/image/5895bee200793723e472d408baab9235dd0ce16d",
+      "width" : 640
+    }, {
+      "height" : 150,
+      "url" : "https://i.scdn.co/image/da5f01f19a56556bc9db2573c5bc91d2ed793ea5",
+      "width" : 200
+    }, {
+      "height" : 48,
+      "url" : "https://i.scdn.co/image/9dd90e8e7b5158e4d38b531fb8fc0b019f377560",
+      "width" : 64
+    } ],
+    "name" : "Daphni",
+    "popularity" : 53,
+    "type" : "artist",
+    "uri" : "spotify:artist:4nhvb6x9ZhPiYCzrHDNia9"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/5akVqMzdZOdbMYbE4vNZWD"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 33173
+    },
+    "genres" : [ "abstract", "acid house", "ambient", "bass music", "big beat", "detroit techno", "drill and bass", "electronic", "glitch", "intelligent dance music", "microhouse", "minimal techno", "ninja", "trip hop", "wonky" ],
+    "href" : "https://api.spotify.com/v1/artists/5akVqMzdZOdbMYbE4vNZWD",
+    "id" : "5akVqMzdZOdbMYbE4vNZWD",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/d0cd2c951ff177c7f9bbc0f86af40b421a536c48",
+      "width" : 640
+    }, {
+      "height" : 320,
+      "url" : "https://i.scdn.co/image/7fd8fe1c823ecd5b8bf79b14868656c104855876",
+      "width" : 320
+    }, {
+      "height" : 160,
+      "url" : "https://i.scdn.co/image/a875e92dd31d6575ae61256954d01473bef3b820",
+      "width" : 160
+    } ],
+    "name" : "Plaid",
+    "popularity" : 47,
+    "type" : "artist",
+    "uri" : "spotify:artist:5akVqMzdZOdbMYbE4vNZWD"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/06xa1OLBsMQJFXcl2tQkH4"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 43258
+    },
+    "genres" : [ "bass music", "electronic", "escape room", "fluxwork", "footwork", "future garage", "glitch hop", "indie r&b", "indietronica", "intelligent dance music", "microhouse", "ninja", "vapor twitch", "vaporwave", "wonky" ],
+    "href" : "https://api.spotify.com/v1/artists/06xa1OLBsMQJFXcl2tQkH4",
+    "id" : "06xa1OLBsMQJFXcl2tQkH4",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/2d4708738af9d0dbedbe91cf74a17c9daf9fa5ba",
+      "width" : 640
+    }, {
+      "height" : 320,
+      "url" : "https://i.scdn.co/image/4cc97de8666273de6694b26034e73707af2a5e41",
+      "width" : 320
+    }, {
+      "height" : 160,
+      "url" : "https://i.scdn.co/image/264092c242c83b88323f8fa186a6a2492d35657a",
+      "width" : 160
+    } ],
+    "name" : "Machinedrum",
+    "popularity" : 54,
+    "type" : "artist",
+    "uri" : "spotify:artist:06xa1OLBsMQJFXcl2tQkH4"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/48C2RLG6w7o4jAJjCJKZM8"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 54998
+    },
+    "genres" : [ "bass music", "chillhop", "chillwave", "future garage", "glitch", "indie jazz", "indie r&b", "indietronica", "intelligent dance music", "ninja", "vaporwave", "wonky" ],
+    "href" : "https://api.spotify.com/v1/artists/48C2RLG6w7o4jAJjCJKZM8",
+    "id" : "48C2RLG6w7o4jAJjCJKZM8",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/c8b08964b2199089f8f047de9761bdacc2d45be6",
+      "width" : 640
+    }, {
+      "height" : 320,
+      "url" : "https://i.scdn.co/image/151e178d691879b1e36934e76dc0b16ce39aecf9",
+      "width" : 320
+    }, {
+      "height" : 160,
+      "url" : "https://i.scdn.co/image/8ff245f1f863539e15503af91d83428405c17fcb",
+      "width" : 160
+    } ],
+    "name" : "Shigeto",
+    "popularity" : 54,
+    "type" : "artist",
+    "uri" : "spotify:artist:48C2RLG6w7o4jAJjCJKZM8"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/7yxi31szvlbwvKq9dYOmFI"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 152474
+    },
+    "genres" : [ "ambient", "compositional ambient", "electronic", "focus", "fourth world" ],
+    "href" : "https://api.spotify.com/v1/artists/7yxi31szvlbwvKq9dYOmFI",
+    "id" : "7yxi31szvlbwvKq9dYOmFI",
+    "images" : [ {
+      "height" : 1500,
+      "url" : "https://i.scdn.co/image/c6b1b93819b9300041d6daae6266937d95af8f67",
+      "width" : 1000
+    }, {
+      "height" : 960,
+      "url" : "https://i.scdn.co/image/474a916da96596389ea43c09707d5db18974c243",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/247ae761400dcdd5b01112c63e7f78db813d2682",
+      "width" : 200
+    }, {
+      "height" : 96,
+      "url" : "https://i.scdn.co/image/160e09d023dbff2b7d2d98aba2081564848a7965",
+      "width" : 64
+    } ],
+    "name" : "Jon Hopkins",
+    "popularity" : 66,
+    "type" : "artist",
+    "uri" : "spotify:artist:7yxi31szvlbwvKq9dYOmFI"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/05lIUgmmsmTX2N9dCKc8rC"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 22768
+    },
+    "genres" : [ "ambient", "ambient idm", "bass music", "chamber psych", "chillwave", "compositional ambient", "electronic", "fluxwork", "intelligent dance music", "microhouse", "minimal techno", "ninja", "wonky" ],
+    "href" : "https://api.spotify.com/v1/artists/05lIUgmmsmTX2N9dCKc8rC",
+    "id" : "05lIUgmmsmTX2N9dCKc8rC",
+    "images" : [ {
+      "height" : 1000,
+      "url" : "https://i.scdn.co/image/79fd826bb950e302d67f86b9d9f40051a9062fd9",
+      "width" : 1000
+    }, {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/8e0116a9e08d86148a38fa42e314c133d27b2c1a",
+      "width" : 640
+    }, {
+      "height" : 200,
+      "url" : "https://i.scdn.co/image/0fdecb2396da4fc987e3cda381e6ff09c2161501",
+      "width" : 200
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/007e962ac4f548638e000d277cd4b1cc9f0f62d2",
+      "width" : 64
+    } ],
+    "name" : "Rival Consoles",
+    "popularity" : 53,
+    "type" : "artist",
+    "uri" : "spotify:artist:05lIUgmmsmTX2N9dCKc8rC"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/6kBDZFXuLrZgHnvmPu9NsG"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 296330
+    },
+    "genres" : [ "acid techno", "alternative dance", "ambient", "drill and bass", "electronic", "fourth world", "indie r&b", "indietronica", "intelligent dance music", "microhouse", "new rave", "trip hop" ],
+    "href" : "https://api.spotify.com/v1/artists/6kBDZFXuLrZgHnvmPu9NsG",
+    "id" : "6kBDZFXuLrZgHnvmPu9NsG",
+    "images" : [ {
+      "height" : 563,
+      "url" : "https://i.scdn.co/image/742a137a1b42a69c215fba62fe177ab470b47e53",
+      "width" : 1000
+    }, {
+      "height" : 360,
+      "url" : "https://i.scdn.co/image/e8ea98b201ac22460a4b1692694c33056bee5247",
+      "width" : 640
+    }, {
+      "height" : 113,
+      "url" : "https://i.scdn.co/image/36b5b12b58564805072899518578b99a707f71a5",
+      "width" : 200
+    }, {
+      "height" : 36,
+      "url" : "https://i.scdn.co/image/cb8391b75241e23acfa1bfe87a73335d26ecf6ee",
+      "width" : 64
+    } ],
+    "name" : "Aphex Twin",
+    "popularity" : 67,
+    "type" : "artist",
+    "uri" : "spotify:artist:6kBDZFXuLrZgHnvmPu9NsG"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/46Ce0QmI1mE2bl5VQ4P9N8"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 52097
+    },
+    "genres" : [ "bass music", "chillwave", "deep indie r&b", "escape room", "fluxwork", "future garage", "indie r&b", "indietronica", "microhouse", "ninja", "vapor soul", "vapor twitch", "vaporwave", "wonky" ],
+    "href" : "https://api.spotify.com/v1/artists/46Ce0QmI1mE2bl5VQ4P9N8",
+    "id" : "46Ce0QmI1mE2bl5VQ4P9N8",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/d336464408fc690db2ed10e0f007a2d14a687f40",
+      "width" : 640
+    }, {
+      "height" : 320,
+      "url" : "https://i.scdn.co/image/63b5ccda2249445399e2242fbf1b97dc19b5583e",
+      "width" : 320
+    }, {
+      "height" : 160,
+      "url" : "https://i.scdn.co/image/35fe6a658b966714d75761228a0f496f0c15116c",
+      "width" : 160
+    } ],
+    "name" : "Lapalux",
+    "popularity" : 54,
+    "type" : "artist",
+    "uri" : "spotify:artist:46Ce0QmI1mE2bl5VQ4P9N8"
+  } ]
+}
+  ]
