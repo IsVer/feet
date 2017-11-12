@@ -102,7 +102,29 @@ let simulation = d3.forceSimulation()
     .force("center", d3.forceCenter(width/2, height / 2));
 
 
+d3.json("data_cleaned.json", function(error, graph) {
+    if (error) throw error;
+
+
+    // build graph
+    const links = addNodeLinks(svg, graph);
+    const nodes = addNodes(svg, graph);
+    // const images = addNodeImages(svg, nodes, graph);
+    const labels = addNodeTitles(svg, graph);
+
+
+    // add interactions and animations
+    attachMouseEventsToCircles(nodes);
+    makeGraphWobbly(graph, links, labels, nodes)
+});
+
+
 function addNodeLinks(svg, graph) {
+    graph.links.forEach(function(d){
+        d.source = d.source_id;
+        d.target = d.target_id;
+    });
+
     // add links to circle nodes
     let links = svg.append("g")
         .style("stroke", "#aaa")
@@ -179,23 +201,7 @@ function attachMouseEventsToCircles(circles) {
         .on("mouseover", handleMouseOver);
 }
 
-d3.json("data_cleaned.json", function(error, graph) {
-    if (error) throw error;
-
-    graph.links.forEach(function(d){
-        d.source = d.source_id;
-        d.target = d.target_id;
-    });
-
-    const links = addNodeLinks(svg, graph);
-    const nodes = addNodes(svg, graph);
-    // const images = addNodeImages(svg, nodes, graph);
-    const labels = addNodeTitles(svg, graph);
-
-    attachMouseEventsToCircles(nodes);
-
-
-
+function makeGraphWobbly(graph, links, labels, nodes) {
     simulation
         .nodes(graph.nodes)
         .on("tick", ticked);
@@ -229,7 +235,8 @@ d3.json("data_cleaned.json", function(error, graph) {
         //     .attr("x", function(d) { return d.x; })
         //     .attr("y", function (d) { return d.y; });
     }
-});
+}
+
 
 // // movement
 // function dragstarted(d) {
