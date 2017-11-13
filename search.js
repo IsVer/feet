@@ -2,19 +2,6 @@
  */
 
 
-function processForm(e) {
-    if (e.preventDefault) e.preventDefault();
-
-    let textinput = document.getElementById("searchinput");
-    let searchterm = textinput.value;
-    window.location.assign("http://www.urbandictionary.com/define.php?term=" + searchterm);
-
-    return false; // Block form
-}
-
-
-////
-
 function searchLibrary(query) {
     //if the result is cached, return it.
     searchLibrary.cache = searchLibrary.cache || {};
@@ -52,10 +39,10 @@ function makeNetworkRequest(query) {
             if (xhr.readyState === 4 && xhr.status === 200) {
                 resolve(xhr.responseText);
             }
-        }
+        };
         xhr.onerror = function() {
             reject(new Error("network error"))
-        }
+        };
         xhr.open("GET", API_URL, true);
         xhr.send();
     });
@@ -119,7 +106,6 @@ function resultListItem(resultItem) {
 }
 resultListItem.prototype = new listItem();
 
-
 function resultList(name, results) {
     this.name = name;
     this.results = results;
@@ -141,7 +127,7 @@ function resultList(name, results) {
         showMoreWrap.appendChild(showMore);
         headerWrap.appendChild(titleWrap);
         headerWrap.appendChild(showMoreWrap);
-        ul.appendChild(headerWrap);
+        ul.appendChild(headerWrap)
         this.results.map(function(item) {
             let li = new resultListItem(item);
             ul.appendChild(li.render());
@@ -149,6 +135,8 @@ function resultList(name, results) {
         return ul;
     }
 }
+
+let search = document.getElementsByClassName("query-input")[0];
 
 search.addEventListener("keyup", function(e) {
     let query = e.target.value;
@@ -180,6 +168,6 @@ function cancelInput() {
     let main = document.getElementsByClassName("main")[0];
     main.classList.add("inactive");
     search.value = '';
-    document.getElementById("results").classList = "";
+    document.getElementById("results").remove();
     search.blur();
 }

@@ -89,21 +89,21 @@ h3 {
 .main-container input[type="search"] {
     padding: 0 10px 0 10px;
     color: #463e3e;
-    flex: 1 0 100px;
+    flex: 0 0 100px;
 }
 
 .main-container input[type='submit'] {
     /*border-radius: 0px 5px 5px 0px;*/
     font-family:monospace, serif;
     background: white;
-    height: 22px;
-    flex: 2 0 50px;
+    height: 20px;
+    flex: 0 0 50px;
     box-shadow: inset 0px 0px 0px rgba(0,0,0,0.1);
     transition: box-shadow 0.3s ease;
 }
 
 .main-container input[type=submit]:hover {
-    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.6);
+    box-shadow: inset 0px 0px 0px rgba(0,0,0,0.6);
 }
 
 #spotifyPlayer {

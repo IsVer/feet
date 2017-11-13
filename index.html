@@ -1,44 +1,39 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Feed it Spotify</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles1.css">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 </head>
 <body>
+<div class="main inactive">
+    <div class="bg-main"></div>
+    <section class="search">
+        <div class="search-box">
+            <div class="introduction-text">
+                <h1>Feed it music</h1>
 
-<main class="main-container">
+            </div>
+            <div class="cancel"></div>
+            <form class="search-form">
+                <div class="query-box">
+                    <input id = 'searchinput' class="query-input" type="text" autocomplete="off" name="search" placeholder="e.g. bach">
+                    <input type="hidden" name="index.html" value="index_search.html">
+                    <div id="results">
+                    </div>
+                    <a id="lookup" href="index.html">Search</a>
 
-    <p id = "title1">Feed it Spotify</p>
-    <!--<iframe id="spotifyPlayer" src="https://open.spotify.com/embed/artist/7Eu1txygG6nJttLHbZdQOh" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>-->
-    <iframe id="spotifyPlayer" src="https://open.spotify.com/embed/track/1vBxzMZGCneeEemHVMw6Q3" width="200" height="74" frameborder="0" allowtransparency="true"></iframe>
-
-    <section>
-        <div class="form">
-            <form action="">
-                <input type="search" value="">
-                <input type="submit" value="Search">
+                </div>
             </form>
-
-            <!--<form>-->
-                <!--<h3> Link threshold 0 <input type="range" id="thersholdSlider" name="points" value = 0 min="0" max="10" onchange="threshold(this.value)"> 10 </h3>-->
-            <!--</form>-->
-
         </div>
-
-        <!--<div class="playlist">-->
-            <!--<div class="loader">-->
-                <!--<div class="inner-circle"></div>-->
-            <!--</div>-->
-        <!--</div>-->
     </section>
-    <svg id="network"  width="1000" height="500"></svg>
-</main>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.min.js"></script>
-<!--<script src="require.js"></script>-->
-<script src="script.js"></script>
-<!--<script src="server.js"></script>-->
+
+
+
+</div>
 </body>
+
+<script src="script1.js"></script>
+
 </html>
