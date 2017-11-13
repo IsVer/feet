@@ -93,7 +93,17 @@
     { "id": 21,
       "name" : "Forest Swords",
       "url" : "https://i.scdn.co/image/154fc533b9d28957a884d7f4e411cdc3bd7cc3b9"
+    },
+    { "id": 22,
+      "name" : "John Talabot",
+      "url" : "https://i.scdn.co/image/bbbd23e3beefd62bee07f92c0a6a6f5b7c236ba1"
+    },
+    { "id": 23,
+      "name" : "Apparat",
+      "url" : "https://i.scdn.co/image/5933ac2952b881ab2a49e6d8cfb8240daede56c0"
     }
+
+
   ],
   "links" : [
 
@@ -180,6 +190,14 @@
     {
       "source_id": 1,
       "target_id": 21
+    },
+    {
+      "source_id": 3,
+      "target_id": 22
+    },
+    {
+      "source_id": 3,
+      "target_id": 23
     }
   ]
 }

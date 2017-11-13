@@ -97,11 +97,12 @@ let svg = d3.select("#network"),
     height = +svg.attr("height");
 
 let simulation = d3.forceSimulation()
-    .force("link", d3.forceLink().id(function(d) { return d.id; }).distance(200))
-    .force("charge", d3.forceManyBody().strength(-120)) //how far removed from each other, the more in minus the farther
+    .force("link", d3.forceLink().id(function(d) { return d.id; }).distance(210))
+    .force("charge", d3.forceManyBody().strength(-400).distanceMin(150).distanceMax(300)) //how far removed from each other, the more in minus the farther
     // .force("charge", d3.forceManyBody().strength(-540).distanceMax(800).distanceMin(400)) //how far removed from each other, the more in minus the farther
-    .force("center", d3.forceCenter(width/2, height / 1.1))
-    .force("collide", d3.forceCollide().strength(0.99).radius(function(d) { return d.r + 130; }).iterations(4));
+    .force("center", d3.forceCenter(width/2, height / 1.4))
+    .force("collide", d3.forceCollide().strength(0.99).iterations(4));
+    // .force("collide", d3.forceCollide().strength(0.99).radius(function(d) { return d.r + 10; }).iterations(4));
     // .force("positioning", d3.forceY(function(d){return d.id*3}));
     // .force("positioning", d3.forceX(1).strength(function(d){return d.id}))
     // .force("positioning", d3.forceY(1).strength(function(d){return d.id}));
@@ -225,10 +226,10 @@ function attachMouseEventsToCircles(images) {
         const name = node.name.toLocaleLowerCase().split(' ').join('-') + '-title';
         const nodeId = '#' + name;
         d3.selectAll(nodeId).style("opacity", 0);
-
-        const nameIm = node.name.toLocaleLowerCase().split(' ').join('-') + '-img';
-        const imgId = "#" + nameIm;
-        d3.selectAll(imgId).lower();
+        //
+        // const nameIm = node.name.toLocaleLowerCase().split(' ').join('-') + '-img';
+        // const imgId = "#" + nameIm;
+        // d3.selectAll(imgId).lower();
     }
 
     // add mouse event listeners to the images nodes
@@ -260,19 +261,19 @@ function makeGraphWobbly(graph, links, labels, nodes, images) {
             .style("font-family", "monospace, serif");
 
         nodes
-            .attr("r", 100)
+            .attr("r", 20)
             .style("fill", "none")
-            .style("stroke", "#969696")
+            // .style("stroke", "#969696")
             .style("stroke-width", "1px")
             .attr("cx", function (d) { return d.x; })
             .attr("cy", function(d) { return d.y; });
 
 
         images
-            .attr("height", 80)
-            .attr("width", 80)
-            .attr("x", function(d) { return d.x-40; })
-            .attr("y", function (d) { return d.y-40; });
+            .attr("height", 70)
+            .attr("width", 70)
+            .attr("x", function(d) { return d.x-30; })
+            .attr("y", function (d) { return d.y-30; });
     }
 }
 
@@ -280,7 +281,7 @@ function makeGraphWobbly(graph, links, labels, nodes, images) {
 
 
 function dragstarted(d) {
-    if (!d3.event.active) simulation.alpha(0.9).restart();
+    if (!d3.event.active) simulation.alpha(0.3).restart();
     d.fx = d.x;
     d.fy = d.y;
 }
@@ -291,7 +292,7 @@ function dragged(d) {
 }
 
 function dragended(d) {
-    if (!d3.event.active) simulation.alpha(0.9);
+    if (!d3.event.active) simulation.alpha(0.99).restart();
     d.fx = null;
     d.fy = null;
 }
