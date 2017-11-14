@@ -2,7 +2,7 @@
 // 1. Randomly generating an artist, and then make a playlist with that.
 // 2. Randomly selecting an artist from your list, and then make a map with that. Playlist option.
 //////////////////////////////////////////////////////////////////////////////////////////////////
-
+//
 const app = {}; //object to store properties and methods
 
 app.apiUrl = 'https://api.spotify.com/v1/me';
@@ -133,6 +133,7 @@ function addNodeLinks(svg, graph) {
     // add links to circle nodes
     let links = svg.append("g")
         .style("stroke", "#aaa")
+        .attr("class", "links")
         .selectAll("line")
         .data(graph.links)
         .enter().append("line");
@@ -281,7 +282,7 @@ function makeGraphWobbly(graph, links, labels, nodes, images) {
 
 
 function dragstarted(d) {
-    if (!d3.event.active) simulation.alpha(0.3).restart();
+    if (!d3.event.active) simulation.alpha(0.99).restart();
     d.fx = d.x;
     d.fy = d.y;
 }
